@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace OrdersEntryForm
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form   
     {
         public Form1()
         {
