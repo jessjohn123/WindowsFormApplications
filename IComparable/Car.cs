@@ -10,35 +10,33 @@ namespace IComparable
     class Car : IComparable<Car>
     {
         public string Name { get; set; }
-        public int Maxph { get; set; }
+        public int MaxMph { get; set; }
         public int HorsePower { get; set; }
         public decimal Price { get; set; }
 
-        // Compare Cars alphabetically by name
+        // Compare Cars alphabetically by Name.
         public int CompareTo(Car other)
         {
             return this.Name.CompareTo(other.Name);
         }
     }
-
-    // This class implements the IComparable class in plain way
-    /*class Car : IComparable
+    /*
+     class Car : IComparable
     {
-        public string Name { get; set; }
-        public int Maxph { get; set; }
-        public int HorsePower { get; set; }
-        public int Price { get; set; }
+    public string Name { get; set; }
+    public int MaxMph { get; set; }
+    public int Horsepower { get; set; }
+    public decimal Price { get; set; }
 
-        // Compare Cars alphabetically by name
-        public int CompareTo(Object obj)
+     // Compare Cars alphabetically by Name.
+        public int CompareTo(object obj)
         {
-            // Validate whether the obj is Car obj
-            if(!obj is Car)
-            {
-                throw new ArgumentException("Object is not a Car");
-            }
+             if (!(obj is Car))
+                   throw new ArgumentException("Object is not a Car");
+
             Car other = obj as Car;
             return Name.CompareTo(other.Name);
         }
-    }*/
+    }
+     * */
 }

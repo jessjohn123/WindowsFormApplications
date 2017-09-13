@@ -53,6 +53,7 @@
             this.unsortedListView.TabIndex = 4;
             this.unsortedListView.UseCompatibleStateImageBehavior = false;
             this.unsortedListView.View = System.Windows.Forms.View.Details;
+            this.unsortedListView.SelectedIndexChanged += new System.EventHandler(this.unsortedListView_SelectedIndexChanged);
             // 
             // columnHeader1
             // 

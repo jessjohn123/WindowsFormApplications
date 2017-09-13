@@ -22,13 +22,13 @@ namespace IComparable
             // Make some data
             Car[] cars =
             {
-                new Car(){  Name = "SSC Ultimate Aero", Maxph = 257, HorsePower = 1183, Price=654400m},
-                new Car(){  Name = "Bugatti Veyron", Maxph = 253, HorsePower = 1001, Price=1700000m},
-                new Car(){  Name = "Saleen S7 Twin-Turbo", Maxph = 248, HorsePower = 750, Price=555000m},
-                new Car(){  Name = "Koenigsegg CCX", Maxph = 245, HorsePower = 806, Price=545568m},
-                new Car(){  Name = "McLaren F1", Maxph = 240, HorsePower = 637, Price=970000m},
-                new Car(){  Name = "Ferrari Enzo", Maxph = 217, HorsePower = 660, Price=670000m},
-                new Car(){  Name = "Jaguar XJ220", Maxph = 217, HorsePower = 542, Price=650000m}
+                new Car(){  Name = "SSC Ultimate Aero",MaxMph = 257, HorsePower = 1183, Price=654400m},
+                new Car(){  Name = "Bugatti Veyron", MaxMph = 253, HorsePower = 1001, Price=1700000m},
+                new Car(){  Name = "Saleen S7 Twin-Turbo", MaxMph = 248, HorsePower = 750, Price=555000m},
+                new Car(){  Name = "Koenigsegg CCX", MaxMph = 245, HorsePower = 806, Price=545568m},
+                new Car(){  Name = "McLaren F1", MaxMph = 240, HorsePower = 637, Price=970000m},
+                new Car(){  Name = "Ferrari Enzo", MaxMph = 217, HorsePower = 660, Price=670000m},
+                new Car(){  Name = "Jaguar XJ220", MaxMph = 217, HorsePower = 542, Price=650000m}
             };
 
             // Display the cars unsorted
@@ -51,7 +51,7 @@ namespace IComparable
             foreach(Car c in cars)
             {
                 ListViewItem item = listview.Items.Add(c.Name);
-                item.SubItems.Add(c.Maxph.ToString());
+                item.SubItems.Add(c.MaxMph.ToString());
                 item.SubItems.Add(c.HorsePower.ToString());
                 item.SubItems.Add(c.Price.ToString());
             }
@@ -63,6 +63,9 @@ namespace IComparable
             }
         }
 
+        private void unsortedListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

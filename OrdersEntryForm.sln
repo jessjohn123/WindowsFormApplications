@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThisAndBase", "ThisAndBase\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparable", "IComparable\IComparable.csproj", "{8CD454B4-9D40-4BC8-B243-856582EF9888}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparerCars", "IComparerCars\IComparerCars.csproj", "{4908FBB2-500E-4EB9-A35F-268EAE6E3E7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8CD454B4-9D40-4BC8-B243-856582EF9888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CD454B4-9D40-4BC8-B243-856582EF9888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CD454B4-9D40-4BC8-B243-856582EF9888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4908FBB2-500E-4EB9-A35F-268EAE6E3E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4908FBB2-500E-4EB9-A35F-268EAE6E3E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4908FBB2-500E-4EB9-A35F-268EAE6E3E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4908FBB2-500E-4EB9-A35F-268EAE6E3E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
